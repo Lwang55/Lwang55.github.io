@@ -3,29 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graffiti Hobby</title>
+    <title>Clickbot Hobby</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600" rel="stylesheet">
     <style>
         body{
-            background-color: #2c27278c;
+            background-color: #2c2727;
             background-image: url(images/clickbot.png); 
             background-position: center center;
             background-size: 150px;
             font-family: Montserrat, sans-serif;
             padding: 0;
             margin-top: 0px; 
+            margin-left:0;
+            margin-right:0;
+            margin-bottom:0px;
         }
         .header{
             background-color: black; 
             top: 0;
             width: 100; 
-            padding: 5px; 
+            padding: 10px; 
+            align-items: center;
+            display: flex;
+
              
             
         }
+        .footer{
+            background-color: black; 
+            bottom: 0;
+            width: 100; 
+            padding: 10px; 
+            align-items: center;
+            display: flex;
+            height: 50px;
+            margin-top: 25px;
+
+             
+        }
         .main {
-            width: 80%;
-            height: 600px; 
+            width: 80%; 
             background-color: #4a4545;
             margin-left: auto;
             margin-right: auto;
@@ -36,6 +53,7 @@
             border-radius: 50px; 
             border-style: dashed;
             border-width: 10px;
+            max-height: auto;
 
             
             
@@ -45,7 +63,11 @@
             color:rgb(59, 159, 231);
             font-size: 50px;
             margin-left: 25px; 
-            
+            text-align:left;
+            margin: auto;
+            max-width: 30;
+            justify-content: left; 
+            align-items:center; 
 
         }
         h2 {
@@ -68,72 +90,172 @@
         section.active {
             display: block;
         }
+        .list{
+            list-style-type: none;
+            margin:0 auto;
+            padding:0; 
+            width: 100; 
+            display: flex;
+            justify-content:right;
+            align-items:right;
+
+        }
+        .item {
+            margin-top:5px; 
+            padding: 8px; 
+            z-index: 20; 
+            text-decoration:none; 
+            border-style: none solid none none;
+            border-color: rgb(48, 46, 46); 
+            
+        }
+        .navbar{
+            justify-content:right;
+            align-items: center;
+            display:flex; 
+        }
+        a {
+            text-decoration:none; 
+            color: white;
+        }
+        img{
+            max-width: 100%
+            height: auto;
+        }
+        .footer a{
+            color:lightblue
+        }
+
+
     </style>
 </head>
 <body>
     <div class="header">
     <header>
-        <h1 ><strong>CLiCKBOT</strong></h1> 
-        <nav> 
-            <a href="#" data-target="section1">About Us</a>
-            <a href="#" data-target="section2">What is it?</a>
-            <a href="#" data-target="section3">Events</a>
-            <a href="#" data-target="section4">Buy</a>
-            <a href="#" data-target="section5">How</a>
-            <a href="#" data-target="section6">Our Mission</a>
-            <a href="#" data-target="section7">AI</a>
+        <h1 ><strong>CLiCKBOT</strong></h1>
+        <nav class="navbar"> 
+            <ul class="list">
+                <li class="item"><a href="#" data-target="section1">What is it?</a></li>
+                <li class="item"><a href="#" data-target="section2">About Us</a></li>
+                <li class="item"><a href="#" data-target="section3">Events</a></li>
+                <li class="item"><a href="#" data-target="section4">Buy</a></li>
+                <li class="item"><a href="#" data-target="section5">How</a></li>
+                <li class="item"><a href="#" data-target="section6">Our Mission</a></li>
+                <li class="item"><a href="#" data-target="section7">AI</a></li>
+            </ul>
         </nav>
     </header>
     </div> 
     <div class="main">
         <main>
             <section id="section1">
-                <h2>About Us!</h2>
+                <h2>What is a CLiCKBOT</h2>
                 <hr>
-                <p>Clic</p>
+                <p>A CLiCKBOT is a small robotic tool used to educate children on beginner code. Featuring a silicon outer shell and robust internal casing.
+                    <figure>
+                        <img src="images/clickbotimg.png" alt="a clickbot">
+                        <figcaption>A Clickbot on the cement</figcaption>
+                    </figure>
+                    <p><i>a toy like a hexbug with one wheel, featuring antenna, should look like a toy. AI used: Deepai</i></p>
+                </p>
+                <p>Using any paper and a black marker kids are able to draw out tracks and watch the CLiCKBOT solve puzzles and avoid obstacles.</p>
 
             </section>
             <section id="section2">
-                <h2>What is a CLiCKBOT</h2>
+                <h2>About Us</h2>
                 <hr>
-                <p>Clic</p>
+                <figure>
+                    <img src="images/walterjones.png" alt="Picture of a man facing a camera">
+                    <figcaption>Founder of Clickbot Walter Jones</figcaption>
+                </figure>
+                <p><i>A guy named Walter Jones. AI- Deepai</i></p>
+                <p> CLiCKBOT was founded in 2007 by Walter Jones (seen above) who decided that there needed
+                    to be a more portable and convinient way for children to get into technology beyond novelty toys. He sought out to create
+                    something which could be easily carried in the pocket and still provide value. And so the click bot was born.
+                </p>
+                <p>Following his initial prototype. Clickbot has grown to become a staple of computer science programs around the world. Continuing to offer
+                    the best means of introducing the wonders of computer programming to children.
+                </p>
 
             </section>
             <section id="section3">
-                <h2>About Us!</h2>
+                <h2>Events</h2>
                 <hr>
-                <p>Clic</p>
+                <figure>
+                    <img src="images/convention.jpg" alt="A gathering of people">
+                    <figcaption>A convention full of people</figcaption>
+                </figure>
+                <p>Check out our upcoming events!</p>
+                <ul>
+                    <li>ComicCon March 43</li>
+                    <li>MagFest April 12</li>
+
+                </ul>
+
 
             </section>
             <section id="section4">
-                <h2>About Us!</h2>
+                <h2>Buy a CLiCKBOT</h2>
                 <hr>
-                <p>Clic</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6987.812565799435!2d-80.73451881367399!3d35.3458774306869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1742267607057!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Come on down to our Store located at the center of this intersection to purchase a Clickbot today!</p>
+                <figure>
+                    <img src="images/store.jpg" alt="a storefront">
+                    <figcaption>The home of the click bot</figcaption>
+                </figure>
 
             </section>
             <section id="section5">
-                <h2>About Us!</h2>
+                <h2>How Does It Work?</h2>
                 <hr>
-                <p>Clic</p>
+                <p>Through a proprietary internal technology, the Clickbot is able to house several internal sensors as well as 4 smalls motores, enabling it to easily complete its many tasks and offer a variety of subjects to experiment with.
+                    The magnetic connection system means that it is also dust and water resistant.
+                </p>
+                <figure>
+                    <img src="images/cube.png" alt="An image of several colorful squares">
+                    <figcaption>What one of the sensors sees generated as a computer model</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/machine.jpg" alt="a small gearbox">
+                    <figcaption>A close up photo of a small piece of the Clickbots internal Machinery</figcaption>
+                </figure>
 
             </section>
             <section id="section6">
-                <h2>About Us!</h2>
+                <h2>Our Mission</h2>
                 <hr>
-                <p>Clic</p>
+                <p>Our mission is to improve the way in which we think about computer science education, and bring tech gadgets from toys discarded after a few days
+                    to tools that could serve children throughout their journey. We hope that the growth of Clickbot will mark the beginnings of a new wave of nondisposable and practical toys.
+                    built to grow as they grow.
+                </p>
+                <figure>
+                    <img src="images/computerlab.jpg" alt="A computer lab">
+                    <figcaption>A computer lab full of students</figcaption>
+                </figure>
+                <p>With the rising costs of technology we hope to keep the Clickbot accessible for all in order to ensure a fair and equitable future.
+                </p>
+                
 
             </section>
             <section id="section7">
-                <h2>About Us!</h2>
+                <h2>AI Utilized</h2>
                 <hr>
-                <p>Clic</p>
+                <p>The AI I used was chatGPT. I used on Ai prompt to essentially skip the learning of how to incorporate JS, the prompt was
+                    <strong>Research and find a solution using css and/or JS that hides all sections except the one you have clicked. The idea is to mimic the nav bar in your main site, the user will click a "link" in your nav tag that will hide all the sections on the page and ONLY display info of the section of choice. So if you click on the word "Best locations" in the nav bar, it will only display the "best locations" section on the page and hide the rest so the user can't scroll to see it.  </strong>
+                    taken directly from the assignment. In turn it returned this java script.
+                </p>
+                <figure>
+                    <img src="images/chatgpt.png" alt="image of a conversation with chatgpt">
+                    <figcaption>Image of conversation with Chatgpt</figcaption>
+                </figure>
+
 
             </section>
         </main>
     </div>
     <div class="footer">
         <footer>
-
+            <p>Designed by <a href="https://cltcurrent.com/">Luke Wang</a></p>
         </footer>
     </div>
 <script>
