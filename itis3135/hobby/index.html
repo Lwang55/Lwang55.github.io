@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graffiti Hobby</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600" rel="stylesheet">
+    <style>
+        body{
+            background-color: #2c27278c;
+            background-image: url(images/clickbot.png); 
+            background-position: center center;
+            background-size: 150px;
+            font-family: Montserrat, sans-serif;
+            padding: 0;
+            margin-top: 0px; 
+        }
+        .header{
+            background-color: black; 
+            top: 0;
+            width: 100; 
+            padding: 5px; 
+             
+            
+        }
+        .main {
+            width: 80%;
+            height: 600px; 
+            background-color: #4a4545;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1000px; 
+            margin-top: 30px;
+            padding: 2px;
+            color:rgb(59, 159, 231);
+            border-radius: 50px; 
+            border-style: dashed;
+            border-width: 10px;
+
+            
+            
+        }
+        h1 {
+            font-weight: 600; 
+            color:rgb(59, 159, 231);
+            font-size: 50px;
+            margin-left: 25px; 
+            
+
+        }
+        h2 {
+            text-align: left;
+            font-weight: 500;
+            color:rgb(59, 159, 231);
+            font-size: 40px;
+            margin-left: 25px;
+
+        }
+        p {
+            font-weight: 300;
+            font-size: 20px;
+            color: white; 
+            margin-left: 15px;
+        }
+        section {
+            display: none;
+        }
+        section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <header>
+        <h1 ><strong>CLiCKBOT</strong></h1> 
+        <nav> 
+            <a href="#" data-target="section1">About Us</a>
+            <a href="#" data-target="section2">What is it?</a>
+            <a href="#" data-target="section3">Events</a>
+            <a href="#" data-target="section4">Buy</a>
+            <a href="#" data-target="section5">How</a>
+            <a href="#" data-target="section6">Our Mission</a>
+            <a href="#" data-target="section7">AI</a>
+        </nav>
+    </header>
+    </div> 
+    <div class="main">
+        <main>
+            <section id="section1">
+                <h2>About Us!</h2>
+                <hr>
+                <p>Clic</p>
+
+            </section>
+            <section id="section2">
+                <h2>What is a CLiCKBOT</h2>
+                <hr>
+                <p>Clic</p>
+
+            </section>
+            <section id="section3">
+                <h2>About Us!</h2>
+                <hr>
+                <p>Clic</p>
+
+            </section>
+            <section id="section4">
+                <h2>About Us!</h2>
+                <hr>
+                <p>Clic</p>
+
+            </section>
+            <section id="section5">
+                <h2>About Us!</h2>
+                <hr>
+                <p>Clic</p>
+
+            </section>
+            <section id="section6">
+                <h2>About Us!</h2>
+                <hr>
+                <p>Clic</p>
+
+            </section>
+            <section id="section7">
+                <h2>About Us!</h2>
+                <hr>
+                <p>Clic</p>
+
+            </section>
+        </main>
+    </div>
+    <div class="footer">
+        <footer>
+
+        </footer>
+    </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+  const navLinks = document.querySelectorAll('nav a');
+  const sections = document.querySelectorAll('section');
+
+  // Function to hide all sections
+  function hideAllSections() {
+    sections.forEach(section => section.classList.remove('active'));
+  }
+
+  // Function to show the targeted section
+  function showSection(targetId) {
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) targetSection.classList.add('active');
+  }
+
+  // Add click event listeners to nav links
+  navLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('data-target');
+
+      hideAllSections();
+      showSection(targetId);
+    });
+  });
+
+  // Initially display the first section
+  if (sections.length > 0) sections[0].classList.add('active');
+});
+
+</script>
+</body>
+</html>
