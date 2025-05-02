@@ -1,0 +1,68 @@
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+body {
+    background-color: black;
+}
+header {
+    background-color: rgb(103, 22, 22);
+    border-radius: 10px 10px 10px 10px;
+    padding: 1px;
+    margin-top: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-shadow: 5px 10px rgb(15, 15, 15);
+    outline: 10px dotted rgb(252, 225, 120);
+    text-align:center;
+    
+    
+    
+}
+h1 {
+    text-align: center;
+    color: yellow;
+    text-shadow: #fc0 1px 0 10px;
+    font-size: 60px;
+    
+
+}
+
+.lights {
+    position: relative;
+}
+.lights::before,
+.lights::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: conic-gradient(from var(--gradient-angle),#fc0, #edd93f, rgb(255, 242, 103),#fc0, #fff);
+    border-radius: inherit;
+    animation: rotation 10s linear infinite;
+
+}
+.lights::after {
+    filter: blur(3.5rem);
+}
+@keyframes rotation {
+    0% { --gradient-angle: 0deg; }
+    100% { --gradient-angle: 360deg; }
+}
+.topnav a{
+    display: inline-block;
+    		border-radius: 30px 30px 30px 30px;    
+    		color: #E08E45;
+    		font-size: 20px;
+            list-style-type: none;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0 10px;
+    		padding: 10px 20px;
+    		font-size: 20px;
+			text-align: center;
+    		background-color: #190B28;    
+    		max-width:160px;
+            margin-bottom: 25px;
+}
