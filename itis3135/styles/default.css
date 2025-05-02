@@ -66,3 +66,27 @@ h1 {
     		max-width:160px;
             margin-bottom: 25px;
 }
+h2 {
+    color: #dda15e;
+    text-align: center;
+}
+p, ul, li{
+    color: #dda15e;
+}
+main {
+    border: thick double #fc0;
+    margin: 50px;
+    
+}
+.intro {
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+    font-size: 25px;
+    
+}
+.picture {
+    display: flex;
+    justify-content: center;
+    color: #dda15e;
+}
