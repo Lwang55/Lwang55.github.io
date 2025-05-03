@@ -1,0 +1,36 @@
+header {
+    background-color: #5B8C5A;
+    color: #da5632;
+    padding-top:10px;
+    font-size: 20px;
+    text-align:center;
+    height: 180px;
+    
+}
+body {
+    margin: 0;
+    background-color:#CFD186;
+}
+main {
+    background-color:#D77A61;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+    text-align: center;
+    color:#2B3D41;
+    padding: 10px;
+    border: 10px dashed #A57548;
+}
+img {
+    width: 300px;
+}
+.topnav nav a{
+    text-decoration: none;
+    color: #2B3D41;
+    background-color:#BCA0BC;
+    padding: 10px 10px;
+    margin-left:20px;
+    box-shadow:5px 5px #2B3D41;
+    
+}
