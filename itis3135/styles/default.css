@@ -7,10 +7,10 @@
 body {
     background-color: black;
 }
-header {
+.lights {
     background-color: rgb(103, 22, 22);
     border-radius: 10px 10px 10px 10px;
-    padding: 1px;
+    padding: 20px;
     margin-top: 15px;
     margin-left: 20%;
     margin-right: 20%;
@@ -64,7 +64,7 @@ h1 {
 			text-align: center;
     		background-color: #190B28;    
     		max-width:160px;
-            margin-bottom: 25px;
+            margin-bottom: 0px;
 }
 h2 {
     color: #dda15e;
@@ -76,6 +76,7 @@ p, ul, li{
 main {
     border: thick double #fc0;
     margin: 50px;
+    padding: 20px;
     
 }
 .intro {
@@ -89,4 +90,33 @@ main {
     display: flex;
     justify-content: center;
     color: #dda15e;
+}
+.design {
+    text-decoration:none;
+    color:#E08E45
+}
+.assignments {
+    background-color: #FAE39B;
+    margin: 40px;
+    border: 5px ridge rgb(86, 71, 71);
+    text-align: center;
+    padding: 20px;
+}
+.assignments nav a {
+    border: 3px solid black;
+    color: black;
+    text-decoration:none;
+    padding: 10px 20px;
+    font-family:Tahoma, sans-serif;
+    font-weight: 600;
+}
+h3 {
+    color:#dda15e;
+}
+figcaption {
+    color:#ad8455;
+}
+.dynamic a{
+    text-decoration:none;
+    color:#fc0
 }
