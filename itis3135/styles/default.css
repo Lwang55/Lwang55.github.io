@@ -75,8 +75,10 @@ p, ul, li{
 }
 main {
     border: thick double #fc0;
-    margin: 50px;
     padding: 20px;
+    max-width:1200px;
+    width: 90%;
+    margin: 0 auto;
     
 }
 .intro {
@@ -119,4 +121,20 @@ figcaption {
 .dynamic a{
     text-decoration:none;
     color:#fc0
+}
+
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+
+    #colorbox {
+
+        background-color:red;
+
+    }
+    img {
+        object-fit: scale-down;
+        max-width: 100%;
+    }
+    .assignments nav a {
+        display:block;
+    }
 }
