@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke Wang's Lucky Wabbit || ITIS 3135 || Tables</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2>Table</h2>
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>Mark Fischbach mfishback@gmail.com 4</li>
+            <li>Lee Edwards lweedwards@yahoo.com 5</li>
+            <li>Carol Thompson cthompson@gmail.com 2</li>
+            <li>Harrison Todd htodd43@hotmail.com 7</li>
+            <li>Jacob Lestrade ljibble@gmail.com 5</li>
+            <li>Ann Burkely anboline@gmail.com 3</li>
+            <li>Timothy Turner tturner@gmail.com 1</li>
+        </ol>
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>Mark Fischbach</td>
+                <td>mfishback@gmail.com</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Lee Edwards</td>
+                <td>lweedward@yahoo.com</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Carol Thompson</td>
+                <td>htodd43@hotmail.com</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Harrison Todd</td>
+                <td>mfishback@gmail.com</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Jacob Lestrade</td>
+                <td>ljibble@gmail.com</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Ann Burkely</td>
+                <td>anboline@gmail.com</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Timothy Turner</td>
+                <td>tturner@gmail.com</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+        <table>
+            <tr>
+                <th>Department</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+                <th>Salaries</th>
+            </tr>
+            <tr>
+                <th rowspan="2" headers="Category" id="baker">Baker</th>
+                <td>Mark Fischbach</td>
+                <td>mfishback@gmail.com</td>
+                <td>4</td>
+                <td>$10,000</td>
+            </tr>
+            <tr>
+                <td>Lee Edwards</td>
+                <td>lweedward@yahoo.com</td>
+                <td>5</td>
+                <td>$8,000</td>
+            </tr>
+            <tr>
+                <th rowspan="3" headers="Category">Accountant</th>
+                <td>Carol Thompson</td>
+                <td>htodd43@hotmail.com</td>
+                <td>2</td>
+                <td>$2,500</td>
+            </tr>
+            <tr>
+                <td>Harrison Todd</td>
+                <td>mfishback@gmail.com</td>
+                <td>7</td>
+                <td>$25</td>
+            </tr>
+            <tr>
+                <td>Jacob Lestrade</td>
+                <td>ljibble@gmail.com</td>
+                <td>5</td>
+                <td>$6,000</td>
+            </tr>
+            <tr>
+                <th rowspan="2" headers="Category">Chemist</th>
+                <td>Ann Burkely</td>
+                <td>anboline@gmail.com</td>
+                <td>3</td>
+                <td>$100,000</td>
+            </tr>
+            <tr>
+                <td>Timothy Turner</td>
+                <td>tturner@gmail.com</td>
+                <td>1</td>
+                <td>$1</td>
+            </tr>
+            <tr>
+                <th colspan="3">Years of Service</th>
+                <td>26</td>
+                <td>$126,525</td>
+            </tr>
+        </table>
+        <figcaption>Employee Information</figcaption>
+    </figure>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/includes.js"></script>
+</body>
+</html>
