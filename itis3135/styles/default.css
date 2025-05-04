@@ -79,6 +79,7 @@ main {
     max-width:1200px;
     width: 90%;
     margin: 0 auto;
+    text-decoration:none;
     
 }
 .intro {
@@ -137,4 +138,17 @@ figcaption {
     .assignments nav a {
         display:block;
     }
+}
+a {
+    text-decoration: none;
+}
+
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+
+    #colorbox {
+
+        background-color:orange;
+
+    }
+
 }
