@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unccsewing.club || Contact</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <div data-include="components/header.html"></div> <!--Imports the header-->
+    <main>
+        <h1>Like what we do? Get in touch!</h1>
+        <div class="form_container"> <!--Stores the form-->
+            <form id="form">
+                <div class="input_field"> <!--Each label has sever input ids for js validation-->
+                    <label for="name">First Name</label>
+                    <input type="text" id="name" name="name" placeholder="First Name" required>
+                    <span class="error" id="nameError"></span>
+                </div>
+                <div class="input_field">
+                    <label for="name">Last Name</label>
+                    <input type="text" id="name" name="name" placeholder="Last Name" required>
+                    <span class="error" id="nameError"></span>
+                </div>
+                <div class="input_field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="12345@blah.com" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div class="input_field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="reason for contact" rows="3" required></textarea>
+                    <span class="error" id="messageError"></span>
+                </div>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <div data-include="components/footer.html"></div> <!--Imports the footer-->
+    <script src="scripts/includes.js"></script> <!--Imports the script for footer and header-->
+    <script src="scripts/contact.js"></script> <!--Imports the contact form script->
+</body>
+</html>

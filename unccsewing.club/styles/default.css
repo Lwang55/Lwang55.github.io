@@ -1,0 +1,299 @@
+/* Header setup inspired by Marc Hinton 
+Enables a clean slate to build the header at the beginning*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+*, *::before, *::after {
+    box-sizing:border-box;
+}
+
+/*fonts obtained from Typodermic Fonts  */
+@font-face {
+    font-family: "Coolvetica-Heavy-Comp";
+    src: url("../font/Coolvetica Hv Comp.otf");
+ }
+ @font-face {
+    font-family: "Coolvetica-Regular";
+    src: url("../font/Coolvetica Rg.otf");
+ }
+ body {
+    background-color: #404848;
+ }
+.header {
+    width: 100%;
+    height: 80px;
+    display:block;
+    background-color:#408683;
+
+}
+.inner_header {
+    width: 1250px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+
+    
+
+}
+.logo_container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo_container > h1{
+    color:#ffbc68;
+    height: 100%;
+    display: table-cell;
+    vertical-align:middle;
+    font-family:"Coolvetica-Heavy-Comp", system-ui, sans-serif;
+}
+/*The SVG Button was made by me*/
+.logo_container > img {
+    width: 50px;
+    height: 100%;
+    display:table-cell;
+    vertical-align:middle;
+    margin-right:10px;
+}
+.navigation {
+    float: right;
+    height: 100%;
+    
+}
+.navigation a{
+
+    display: table;
+    float: left;
+    padding: 10px 20px;
+    margin: 20px;
+    
+
+
+
+}
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    color: #ffbc68;
+    font-family:"Coolvetica-Regular", system-ui, sans-serif;
+    
+
+}
+/* Used to create the classic Windows 98 button appearance*/
+#button {
+    border-top: 2px ridge white;
+    border-left: 2px ridge white;
+    border-right: 2px ridge rgb(49, 49, 49);
+    border-bottom: 2px ridge rgb(49,49,49);
+    padding: 10px 20px;
+    
+}
+ #button:hover{
+    border-top: 2px ridge rgb(49,49,49);
+    border-left: 2px ridge rgb(49,49,49);
+    border-right: 2px ridge white;
+    border-bottom: 2px ridge white;
+}
+h1 {
+    font-family:"Coolvetic-Heavy-Comp", system-ui, sans-serif;
+    text-align:center;
+    margin-bottom:20px;
+    
+}
+h2 {
+    font-family:"Coolvetica", system-ui, sans-serif;
+    font-size: 40px;
+}
+p {
+    font-family:"Coolvetica-Regular", system-ui, sans-serif;
+}
+.call_action > h2 {
+    font-family:"Coolvetica-Regular", system-ui, sans-serif;
+    font-weight:800;
+    font-size: 70px;
+}
+main {
+    margin: 0 auto;
+    border: 5px ridge grey;
+    padding:20px;
+    width: 90%;
+    max-width:1200px;
+    margin-top:20px;
+    background-color:white;
+    
+}
+.intro {
+    display:flex;
+}
+.intro_text {
+    margin:20px;
+    font-size: 25px;
+
+}
+
+.intro_text a {
+    color: #ff5fc6;
+}
+.carousel {
+    width: auto;
+    height: 110vh;
+    position:relative;
+    
+    
+    
+}
+.slide {
+    position:absolute;
+    inset:0;
+    opacity: 0;
+    
+}
+.slide > img {
+    display:block;
+    width:100%;
+    height:auto;
+    object-position: center;
+    object-fit:cover;
+
+}
+/*Displays the current active slide*/
+.slide[data-active] {
+    opacity:1;
+}
+.carousel-button {
+    position: absolute;
+    z-index:2;
+    background: none;
+    border: none;
+    font-size:4rem;
+    top:50%;
+    transform: translateY(-50%);
+    color: rgba(255,255,255,.5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0,0,0, .1);
+
+
+}
+.carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+.carousel-button:hover {
+    color:white;
+    background-color: rgba(0,0,0, .2)
+}
+.carousel-button.prev {
+    left: 1rem;
+}
+.carousel-button.next {
+    right: 1rem;
+}
+.collapsible {
+    background-color:#35b8c5;
+    cursor: pointer;
+    text-align:left;
+    padding: 15px;
+    width: 60%;
+    font-size: 20px;
+    font-weight:600;
+    font-family:"Coolvetica-Regular", system-ui, sans-serif;
+    border-top: 2px ridge rgb(255, 255, 255);
+    border-left: 2px ridge rgb(255, 255, 255);
+    border-right: 2px ridge rgb(49, 49, 49);
+    border-bottom: 2px ridge rgb(49,49,49);
+}
+.open, .collapsible:hover {
+    border-top: 2px ridge rgb(49,49,49);
+    border-left: 2px ridge rgb(49,49,49);
+    border-right: 2px ridge white;
+    border-bottom: 2px ridge white;
+}
+.collapsible:after {
+    content:"\002B";
+    color:#c86835;
+    float:right;
+    font-size: 25px;
+    font-weight:600;
+}
+.active:after {
+    content:"\2212";
+    color:#c86835
+}
+/* Hides the content until the button is clicked*/
+.content {
+    max-height: 0;
+    padding: 0 15px;
+    overflow: hidden;
+    background-color:#8affea;
+    transition: max-height 0.2s ease-out;
+    width:60%;
+}
+.form_container {
+    width: 100%;
+    padding:20px;
+
+}
+#form {
+    text-align:center;
+}
+label {
+    display:block;
+    margin-bottom: 2px;
+    font-family:"Coolvetica", system-ui, sans-serif;
+    font-weight:600;
+    font-size:15px;
+
+}
+input, textarea {
+    width:50%;
+    border-top: 2px ridge rgb(49,49,49);
+    border-left: 2px ridge rgb(49,49,49);
+    border-right: 2px ridge white;
+    border-bottom: 2px ridge white;
+    box-sizing:border-box;
+}
+.error {
+    color:red;
+    font-size: 1rem;
+    display:none;
+}
+.submit {
+    background-color:#35b8c5;
+    color:#000000;
+    width:50%;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family:"Coolvetica", system-ui, sans-serif;
+    font-weight:600;
+    font-size:15px;
+}
+.submit:hover {
+    background-color:#3b9098;
+}
+.event {
+    margin:20px;
+    display:table;
+}
+.event > img {
+    width:150px;
+    height:auto;
+    margin:20px;
+}
+.event > p {
+    font-size: 25px;
+    font-weight:500;
+    display:table-cell;
+    vertical-align:middle;
+    height:100%;
+}
+.event a {
+    color:#ffbc68;
+}
